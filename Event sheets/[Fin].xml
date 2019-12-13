@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>[Fin]</name>
+    <events>
+        <variable constant="0" name="Parolefin" sid="834910244283242" static="0" type="number">0</variable>
+        <event-block sid="796393323654740">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="763628963711919" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="518292177384882" type="Audio">
+                    <param id="0" name="Audio file">Bravo</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;fin&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="936764424263072">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="761933095121087" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="833835673303460" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="934058336704694">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="610027587184578" type="System">
+                            <param id="0" name="Variable">Parolefin</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="638948289191224" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="902490355127293" type="Audio">
+                            <param id="0" name="Audio file">A bientot</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;fin&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="236960950818147">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="118615512533688" type="System">
+                            <param id="0" name="Variable">Parolefin</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="884251422454331" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="280929743535903" type="Audio">
+                            <param id="0" name="Audio file">Au revoir</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;fin&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

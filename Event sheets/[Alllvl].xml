@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>[Alllvl]</name>
+    <events>
+        <variable constant="0" name="Musique" sid="518810058737052" static="0" type="number">0</variable>
+        <include>[robot]</include>
+        <event-block sid="309887826108986">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="270743062318343" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="294832508230624" type="PorteDébut">
+                    <param id="0" name="Animation">&quot;Fermetureporte&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="435989765706072" type="Audio">
+                    <param id="0" name="Audio file">Fermeture porte</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="640067336427954" type="Sandra">
+                    <param id="0" name="Object">Pistoletportailhorizontal</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="474510865251766" type="Pistoletportailhorizontal">
+                    <param id="0" name="X">Sandra.X</param>
+                    <param id="1" name="Y">Sandra.Y</param>
+                </action>
+                <action id="-9" name="Set value" sid="259265449851661" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Value">int(random(1,6))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="491355699643495">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="620036727756840" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="175472622875816" type="Pistoletportailhorizontal">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="359255145328092">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="380120024781714" type="Sandra">
+                    <param id="0" name="Object">PorteFin</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="800835729515129" type="Textsortie">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="315651877536507">
+            <conditions>
+                <condition id="-22" name="Else" sid="628436911972464" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="183438131714084" type="Textsortie">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="660751669584049">
+            <conditions>
+                <condition id="2" name="Key is down" sid="348457319126697" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="830991351276709" type="Sandra">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="196112970038431">
+            <conditions>
+                <condition id="2" name="Key is down" sid="798031713295374" type="Keyboard">
+                    <param id="0" name="Key">81</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="931846667139098" type="Sandra">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="646642756661154">
+            <conditions>
+                <condition id="2" name="Key is down" sid="829383198868567" type="Keyboard">
+                    <param id="0" name="Key">90</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="614183842725823" type="Sandra">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="752102676945256">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="917014964612629" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="964896629772626" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>W pour revenir au menu</comment>
+        <event-block sid="352692780103162">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="991468960391515" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="850600037211307" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="172755896029759" type="Audio">
+                    <param id="0" name="Audio file">Cara mia adio - Musique</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="253058239425739">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="687061553311180" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="545584598851655" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="969431705004350" type="Audio">
+                    <param id="0" name="Audio file">Music of the sphere - Musique</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="851321188053459">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="732187786751520" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="900596443799032" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="652182326042345" type="Audio">
+                    <param id="0" name="Audio file">Robots</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="563574793030830">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="697668658359483" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="735062546228873" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="248138430408704" type="Audio">
+                    <param id="0" name="Audio file">Science is fun - Musique</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="534858706605616">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="824534108019104" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="688561328561640" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="447252674290923" type="Audio">
+                    <param id="0" name="Audio file">Some assembly required</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="453191781837388">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="958589342647949" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="923628663643231" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="191349821134524" type="Audio">
+                    <param id="0" name="Audio file">Want you gone - Musique</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="417745171890329">
+            <conditions>
+                <condition id="0" name="On ended" sid="757547214455637" type="Audio">
+                    <param id="0" name="Tag">&quot;music&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="267426439754156" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Value">int(random(1,6))</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

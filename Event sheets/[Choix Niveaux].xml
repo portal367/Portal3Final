@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>[Choix Niveaux]</name>
+    <events>
+        <variable constant="0" name="Niveau" sid="185249984891726" static="0" type="number">0</variable>
+        <event-block sid="161448221378624">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="318328905152198" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="337752015056414" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="728453880697154" type="Audio">
+                    <param id="0" name="Audio file">Cara mia adio - Musique</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="487614145610638">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="856418746646450" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="827382541812273" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="297334744310567" type="Audio">
+                    <param id="0" name="Audio file">Music of the sphere - Musique</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="995990350088340">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="152964268810489" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="652715956265118" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="403075305635268" type="Audio">
+                    <param id="0" name="Audio file">Robots</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="811588158774662">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="850249782815748" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="673025905457610" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="222752287256465" type="Audio">
+                    <param id="0" name="Audio file">Science is fun - Musique</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="457773988010543">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="347972646855250" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="284574110505264" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="518063829998592" type="Audio">
+                    <param id="0" name="Audio file">Some assembly required</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="346734572136512">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="834624005917021" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="378297049306530" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="945427775475599" type="Audio">
+                    <param id="0" name="Audio file">Want you gone - Musique</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="534249347514359">
+            <conditions>
+                <condition id="0" name="On ended" sid="374672663908324" type="Audio">
+                    <param id="0" name="Tag">&quot;music&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="409028965030920" type="System">
+                    <param id="0" name="Variable">Musique</param>
+                    <param id="1" name="Value">int(random(1,6))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="146038828916896">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="721824089965225" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Gomenu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="377122707393586" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="499410404674097">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="227060021550402" type="System">
+                    <param id="0" name="Variable">Niveau</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="456572859129145" type="Uno">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="329923365585559">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="447340027773081" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Nivo1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="139967750678203" type="System">
+                            <param id="0" name="Layout">Level1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="255244793265097">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="243793979944139" type="System">
+                    <param id="0" name="Variable">Niveau</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="807311096232163" type="Dos">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="961510531691647">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="970659555425474" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Nivo2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="756665719597352" type="System">
+                            <param id="0" name="Layout">Level2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="282405376068654">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="864761008354845" type="System">
+                    <param id="0" name="Variable">Niveau</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="974984575974965" type="Tres">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="541509023794918">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="819750872718342" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Nivo3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="787965978992102" type="System">
+                            <param id="0" name="Layout">level3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="511702493685496">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="747002695635623" type="System">
+                    <param id="0" name="Variable">Niveau</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="690486011795942" type="Quatro">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="889632547282595">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="810648580311070" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Nivo4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="818598838975383" type="System">
+                            <param id="0" name="Layout">Level4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="548307458573395">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="786901020686306" type="System">
+                    <param id="0" name="Variable">Niveau</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="929954123987736" type="Cink">
+                    <param id="0" name="Frame number">5</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="908483656700653">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="457958188835047" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Cinko</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="455793801574732" type="System">
+                            <param id="0" name="Layout">Level5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="526775979119355">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="503690589272885" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="742131064302025" type="Audio">
+                    <param id="0" name="Tag">&quot;music&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

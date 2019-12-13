@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>[robot]</name>
+    <events>
+        <event-block sid="150249378332006">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="661628053217197" type="Balle">
+                    <param id="0" name="Object">Sandra</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="722066394217182" type="Balle" />
+                <action id="-26" name="Restart layout" sid="837409381334842" type="System" />
+                <action disabled="1" id="-21" name="Reset global variables" sid="432249128051089" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="101343590395758">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="190057036580149" type="Balle">
+                    <param id="0" name="Object">contourdemapsolide</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="742955293220164" type="Balle" />
+            </actions>
+        </event-block>
+        <event-block sid="380382616151501">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="431721018504513" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="1" name="Add object to target" sid="212190317109533" type="Ennemi">
+                    <param id="0" name="Target">Ciblerobot</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="804459493218877">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="967106870366382" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="326233161627800" type="Ennemi">
+                    <param id="0" name="Object">Balle</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

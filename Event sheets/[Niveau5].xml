@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>[Niveau5]</name>
+    <events>
+        <include>[robot]</include>
+        <include>[Méca Portail]</include>
+        <include>[MortFin]</include>
+        <include>[Alllvl]</include>
+        <event-block sid="969637453714619">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="381148749380074" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="189388637400170" type="Pistoletportailhorizontal">
+                    <param id="0" name="Pin to">Sandra</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="349022510945284">
+            <conditions>
+                <condition id="4" name="On finished" sid="612623990841919" type="PorteFin">
+                    <param id="0" name="Animation">&quot;OuverturePorte&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="674917942375662" type="System">
+                    <param id="0" name="Layout">Fin</param>
+                </action>
+                <action id="-9" name="Set value" sid="185814149108483" type="System">
+                    <param id="0" name="Variable">Niveau</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="451047765454539">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="189301389655252" type="Tirbleuhorizontal">
+                    <param id="0" name="Object">contourdemapsolide</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="637324756548269" type="Tirbleuhorizontal" />
+            </actions>
+        </event-block>
+        <event-block sid="373893705726039">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="338282514653196" type="Tirorangehorizontal">
+                    <param id="0" name="Object">contourdemapsolide</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="687146225383618" type="Tirorangehorizontal" />
+            </actions>
+        </event-block>
+        <event-block sid="281702509947286">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="425538807980021" type="Sandra">
+                    <param id="0" name="Object">Dalle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="919015187720231" type="Dalle">
+                    <param id="0" name="Animation">&quot;DalleAppuyée&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="164356036535804">
+            <conditions>
+                <condition id="4" name="On finished" sid="433401879402871" type="Dalle">
+                    <param id="0" name="Animation">&quot;DalleAppuyée&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="321628220723362" type="Ennemi" />
+            </actions>
+        </event-block>
+        <event-block sid="285648981102685">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="504074303006129" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="400102007916140" type="Audio" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

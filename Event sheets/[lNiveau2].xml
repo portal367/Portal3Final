@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>[lNiveau2]</name>
+    <events>
+        <include>[Méca Portail]</include>
+        <include>[MortFin]</include>
+        <include>[Alllvl]</include>
+        <event-block sid="845715818481108">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="568296352657218" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="250413071684083" type="Pistoletportailhorizontal">
+                    <param id="0" name="Pin to">Sandra</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="983022234214275">
+            <conditions>
+                <condition id="4" name="On finished" sid="365379918412882" type="PorteFin">
+                    <param id="0" name="Animation">&quot;OuverturePorte&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="673453929626544" type="System">
+                    <param id="0" name="Layout">level3</param>
+                </action>
+                <action id="-9" name="Set value" sid="405548526709992" type="System">
+                    <param id="0" name="Variable">Niveau</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="107979812177582">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="269909528613773" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="935344281348577" type="Audio" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

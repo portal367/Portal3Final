@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>[Niveau4]</name>
+    <events>
+        <include>[Méca Portail]</include>
+        <include>[MortFin]</include>
+        <include>[Alllvl]</include>
+        <event-block sid="436526635603885">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="184042993795967" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="476201464458489" type="Pistoletportailhorizontal">
+                    <param id="0" name="Pin to">Sandra</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="969155007768679">
+            <conditions>
+                <condition id="4" name="On finished" sid="302044205825779" type="PorteFin">
+                    <param id="0" name="Animation">&quot;OuverturePorte&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="542792859287403">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="397610933301071" type="Tirbleuhorizontal">
+                    <param id="0" name="Object">contourdemapsolide</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="327180098489486" type="Tirbleuhorizontal" />
+            </actions>
+        </event-block>
+        <event-block sid="176717604629467">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="305821913282950" type="Tirorangehorizontal">
+                    <param id="0" name="Object">contourdemapsolide</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="128966187416610" type="Tirorangehorizontal" />
+            </actions>
+        </event-block>
+        <event-block sid="200209903001710">
+            <conditions>
+                <condition id="4" name="On finished" sid="510915595968959" type="PorteFin">
+                    <param id="0" name="Animation">&quot;OuverturePorte&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action disabled="1" id="-21" name="Reset global variables" sid="424753819842057" type="System" />
+                <action id="-2" name="Go to layout" sid="436941163333687" type="System">
+                    <param id="0" name="Layout">Level5</param>
+                </action>
+                <action id="-9" name="Set value" sid="620639222231549" type="System">
+                    <param id="0" name="Variable">Niveau</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="728714929251117">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="614424844842804" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="324824467617957" type="Audio" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
